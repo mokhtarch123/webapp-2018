@@ -1,0 +1,25 @@
+
+  <!-- -------------------------------- HANDLEBARS --------------------------------- -->
+  <script id="handlebars-meteo" type="text/x-handlebars-template">
+    <h1>Météo
+      <p class="ville"><strong class="mx-auto">{{ville}}</strong></p>
+    </h1>
+
+    <div class="row statistiques">
+        <div class="conteneur-temp col-5 p-4 m-2">
+          <h4>Température</h4>
+          <h2 class="pt-3">{{temperature}}</h2>
+        </div>
+        <div class="conteneur-temp col-5 p-4 m-2">
+          <h4>Humidité</h4>
+          <h2 class="pt-3">{{humidite}}</h2>
+        </div>
+        <div class="conteneur-tend col-10 m-4">
+          <h4>Tendance</h4>
+          <div>{{tendance}}</div><br>
+           <div>
+             <img src="{{imagemeteo}}" id="imgmeteo" alt="" width="128" height="128">
+           </div>
+        </div>
+    </div>
+  </script>
